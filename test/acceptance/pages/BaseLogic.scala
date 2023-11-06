@@ -10,7 +10,7 @@ object BaseLogic {
 
   def navigateToStartPage(): Unit = {
     new WebDriverWait(webDriver, Duration.ofSeconds(Configuration.settings.PAGE_TIMEOUT_SECS))
-    webDriver.get("http://localhost:9000/")
+    webDriver.get("http://localhost:3000/")
   }
 
   def getElement(by: By): WebElement = {
